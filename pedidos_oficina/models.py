@@ -1,7 +1,7 @@
 from django.db import models
 from django.db import connections
 
-def pegandoPrefixosDoDb():
+def pegandoPrefixosDoDb():                                                                          #criei uma funcao que fara a captura dos dados no meu bancod e dados
     table_viaturas = 'viaturas'
     coluna_viaturas = 'prefixo'
     conexao_db = connections['default']
