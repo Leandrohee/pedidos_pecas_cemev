@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Pedido
+from .models import Pedido2024
 
-class PedidoAdmin(admin.ModelAdmin):
+class PedidoAdmin2024(admin.ModelAdmin):
     
     list_display = ('id','oficina','oss','prefixo','modelo','fornecedor', 'data_envio','data_recebimento','responsavel_recebimento','mecanico_requerente','nota_fiscal')
     list_display_links = ('id',)
@@ -9,5 +9,5 @@ class PedidoAdmin(admin.ModelAdmin):
     list_per_page = 100
 
 
-admin.site.register(Pedido,PedidoAdmin)
+admin.site.register(Pedido2024,PedidoAdmin2024)
 
