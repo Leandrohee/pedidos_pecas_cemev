@@ -16,7 +16,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -26,7 +25,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pedidos_oficina.apps.PedidosOficinaConfig'
+    'pedidos_oficina.apps.PedidosOficinaConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -112,3 +112,9 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'frontend_react_pedidos_pecas/build/st
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# REST_FRAMEWORK = {
+#     'DEFAULT_RENDERER_CLASSES': [
+#         'rest_framework.renderers.JSONRenderer',
+#     ]
+# }
